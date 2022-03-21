@@ -1,0 +1,56 @@
+{
+  "name": "ssr-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build:client": "vue-cli-service build --mode client --dest dist/client",
+    "build:server": "vue-cli-service build --mode server --dest dist/server",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vue/server-renderer": "^3.2.31",
+    "core-js": "^3.8.3",
+    "express": "^4.17.3",
+    "koa": "^2.13.4",
+    "koa-static": "^5.0.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "lodash.merge": "^4.6.2",
+    "vue-server-renderer": "^2.6.14",
+    "webpack-manifest-plugin": "^5.0.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
