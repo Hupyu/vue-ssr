@@ -1,3 +1,5 @@
+
+
 // entry-client.js
 import { createSSRApp } from 'vue'
 import { createWebHistory } from 'vue-router'
@@ -13,3 +15,4 @@ app.use(router)
 router.isReady().then(() => {
   app.mount('#app')
 })
+

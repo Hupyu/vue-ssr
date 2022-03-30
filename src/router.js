@@ -1,3 +1,5 @@
+
+
 import { createRouter } from 'vue-router'
 
 const routes = [
@@ -11,3 +13,5 @@ export default function (history) {
     routes
   })
 }
+
+

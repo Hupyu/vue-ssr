@@ -1,3 +1,5 @@
+
+
 // entry-server.js
 import { createSSRApp } from 'vue'
 // 服务器端路由与客户端使用不同的历史记录
@@ -16,3 +18,4 @@ export default function () {
     router
   }
 }
+
